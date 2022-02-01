@@ -19,8 +19,13 @@ class ViewController: UIViewController, UITableViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setupTableView()
         setupDataSource()
+        setupNavBar()
+    }
+    
+    private func setupNavBar(){
         title = "My Fruits"
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "plus"),
                                                             style: .done,
